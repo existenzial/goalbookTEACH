@@ -17,17 +17,6 @@ const talkParams = {
    recent: false
 };
 
-const checkMessage = () => {
-  stream.on( 'direct_message', (directMsg) => {
-    directMsg = JSON.parse( directMsg );
-    talkParams.input = directMsg.text;
-    bot.talk( talkParams, (err, res) => {
-      if (!err) { console.log(res); }
-      T.post( goalbookTEACHUrl, { screen_name: 'goalbookTEACH', text: res.responses[0] });
-    });
-  })
-}
-
 // GET to 'search/tweets' for Top 10 Goalbook Tweets
 let topTenGoalbookTweets = { q: 'goalbook', count: 10 };
 
@@ -39,6 +28,22 @@ const getGoalbookTweets = (err, data, res) => {
   }
 }
 
-T.get( 'search/tweets', topTenGoalbookTweets, getGoalbookTweets );
+//T.get( 'search/tweets', topTenGoalbookTweets, getGoalbookTweets );
 
-//checkMessage();
+let goalbookTEACHDMParams = { include_entities: false, skip_statuses: true };
+
+const getGoalbookDMs = (err, data, res) => {
+  let messages = data;
+  for (let i = 0; i < messages.length; i++) {
+    let message = messages[i].text;
+
+    talkParams.input = message;
+    bot.talk( talkParams, (err, res) => {
+      if (!err) { console.log(res.responses[0]); }
+    });
+
+    console.log( message );
+  }
+}
+
+T.get( 'direct_messages', goalbookTEACHDMParams, getGoalbookDMs );
