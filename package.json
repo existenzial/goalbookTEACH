@@ -1,0 +1,25 @@
+{
+  "name": "goalbookteach",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index",
+    "pretest": "echo Starting tests!!",
+    "test": "node test/test",
+    "posttest": "echo Finished running tests!!",
+    "test-watch": "nodemon test/test"
+  },
+  "keywords": [],
+  "author": "Jazz Lyles <ripley36706@gmail.com> (https://github.com/existenzial)",
+  "license": "ISC",
+  "dependencies": {
+    "babel-preset-es2015": "^6.18.0",
+    "babel-register": "^6.18.0",
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "pb-node": "^2.0.1",
+    "twit": "^2.2.5"
+  }
+}
