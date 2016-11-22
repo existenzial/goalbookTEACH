@@ -5,6 +5,8 @@ const { pandoraOptions, twitOptions } = require('./credentials');
 const bot = new Pandorabot( pandoraOptions );
 const T = new Twit( twitOptions );
 
+const stream = T.stream( 'user' );
+
 // Pandorabot Params
 const talkParams = {
    client_name: bot,
@@ -22,6 +24,7 @@ const getGoalbookTweets = (err, data, res) => {
     let tweet = tweets[i].text;
   }
 }
+
 const getTopTenTweets = () => {
   T.get( 'search/tweets', topTenGoalbookTweets, getGoalbookTweets );
 }
@@ -52,4 +55,22 @@ const pollDMs = () => {
   T.get( 'direct_messages', goalbookTEACHDMParams, goalbookDMBotTalk );
 }
 
-pollDMs();
+const greetNewFollow = (event) => {
+  let newUserFollow = event.source.name;
+  console.log( `New User: ${event.source.screen_name} followed goalbookTEACH!` );
+  bot.talk( talkParams, (err, res) => {
+    if (!err) {
+      T.post('direct_messages/new', { user_id: event.source.id, text: `Hi! Thanks for the follow, ${newUserFollow}!` }, (err, data, res) => {
+        if (!err) {
+          let botReply = data.text;
+          console.log( botReply );
+        } else {
+          console.error( err );
+        }
+      })
+    }
+  });
+}
+
+stream.on( 'follow', greetNewFollow );
+//stream.on( 'direct_message', pollDMs );
