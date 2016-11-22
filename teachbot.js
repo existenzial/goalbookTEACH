@@ -12,7 +12,7 @@ let stream = T.stream('user', { stringify_friend_ids: true });
 const talkParams = {
    client_name: bot,
    user_key: pandoraOptions.user_key,
-   input: 'How old are you',
+   input: '',
    trace: false,
    recent: false
 };
@@ -34,16 +34,13 @@ let goalbookTEACHDMParams = { include_entities: false, skip_statuses: true };
 
 const getGoalbookDMs = (err, data, res) => {
   let messages = data;
-  for (let i = 0; i < messages.length; i++) {
-    let message = messages[i].text;
+  let mostRecentMessage = messages[0].text;
+  talkParams.input = mostRecentMessage;
 
-    talkParams.input = message;
-    bot.talk( talkParams, (err, res) => {
-      if (!err) { console.log(res.responses[0]); }
-    });
-
-    console.log( message );
-  }
+  console.log( talkParams.input );
+  bot.talk( talkParams, (err, res) => {
+    if (!err) { console.log( res.responses[0] ); }
+  });
 }
 
 T.get( 'direct_messages', goalbookTEACHDMParams, getGoalbookDMs );
