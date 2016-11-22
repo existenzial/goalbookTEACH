@@ -20,7 +20,6 @@ const getGoalbookTweets = (err, data, res) => {
   let tweets = data.statuses;
   for (let i = 0; i < tweets.length; i++) {
     let tweet = tweets[i].text;
-    console.log( tweet );
   }
 }
 const getTopTenTweets = () => {
@@ -32,11 +31,20 @@ let goalbookTEACHDMParams = { include_entities: false, skip_statuses: true };
 const goalbookDMBotTalk = (err, data, res) => {
   let messages = data;
   let mostRecentMessage = messages[0].text;
-  talkParams.input = mostRecentMessage;
+  talkParams.input = mostRecentMessage; //user input
 
-  console.log( talkParams.input ); //user input
   bot.talk( talkParams, (err, res) => {
-    if (!err) { console.log( res.responses[0] ); } //bot response to user input
+    if (!err) {
+      //bot response to user input
+      T.post('direct_messages/new', { user_id: messages[0].sender.id, text: res.responses[0] }, (err, data, res) => {
+        if (!err) {
+          let botReply = data.text;
+          console.log( botReply );
+        } else {
+          console.error( err );
+        }
+      })
+    }
   });
 }
 
