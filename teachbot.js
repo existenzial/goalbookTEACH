@@ -1,3 +1,5 @@
+`use strict`
+
 const Twit = require('twit');
 const Pandorabot = require('pb-node');
 // Destructuring - Not Supported on Heroku
