@@ -131,9 +131,7 @@
 
     <category>
         <pattern>CATEGORIES</pattern>
-        <template>
-            Here are some areas of interest that might help.
-            Search any of the following to get more information:
+        <template>Here are some areas of interest that might help. Search any of the following to get more information:
                 'mission'
                 'grades'
                 'subjects'
@@ -160,10 +158,7 @@
 
     <category>
         <pattern>MISSION</pattern>
-        <template>
-            Goalbook was founded with the simple desire to help educators provide accessible learning experiences for all children.
-            Every disabled child deserves lesson plans tailored to their individual needs, and it's Goalbook's aim to help make that possible.
-            </template>
+        <template>Goalbook was founded with the simple desire to help educators provide accessible learning experiences for all children. Every disabled child deserves lesson plans tailored to their individual needs, and it's Goalbook's aim to help make that possible.</template>
     </category>
 
     <category>
@@ -268,24 +263,17 @@
 
     <category>
         <pattern>^ SIGNUP ^</pattern>
-        <template>
-             Stop by <a href="https://goalbookapp.com">goalbookapp.com</a> to signup and get access today!
-        </template>
+        <template>Stop by <a href="https://goalbookapp.com">goalbookapp.com</a> to signup and get access today!</template>
     </category>
 
     <category>
         <pattern>MEMBERSHIP</pattern>
-        <template>
-            There are a lot of different membership options, so you're guaranteed to find something that's right for you.
-            Stop by <a href="https://goalbookapp.com">goalbookapp.com</a> to check them out!
-        </template>
+        <template>There are a lot of different membership options, so you're guaranteed to find something that's right for you. Stop by <a href="https://goalbookapp.com">goalbookapp.com</a> to check them out!</template>
     </category>
 
     <category>
         <pattern>PRIVACY</pattern>
-        <template>
-            Check out the <a href="https://goalbookapp.com/privacy">Privacy Policy</a> for more details.
-        </template>
+        <template>Check out the <a href="https://goalbookapp.com/privacy">Privacy Policy</a> for more details.</template>
     </category>
 
     <category>
@@ -310,9 +298,7 @@
 
     <category>
         <pattern>TERMS</pattern>
-        <template>
-            The <a href="https://goalbookapp.com/terms">Terms of Use</a> are in place to bind every user to treat others as they would want to be treated. Goalbook cares about their users.
-        </template>
+        <template>The <a href="https://goalbookapp.com/terms">Terms of Use</a> are in place to bind every user to treat others as they would want to be treated. Goalbook cares about their users.</template>
     </category>
 
     <category>
