@@ -1,6 +1,9 @@
 const Twit = require('twit');
 const Pandorabot = require('pb-node');
-const { pandoraOptions, twitOptions } = require('./credentials');
+// Destructuring - Not Supported on Heroku
+//const { pandoraOptions, twitOptions } = require('./credentials');
+const pandoraOptions = require('./credentials').pandoraOptions;
+const twitOptions = require('./credentials').twitOptions;
 
 const bot = new Pandorabot( pandoraOptions );
 const T = new Twit( twitOptions );
