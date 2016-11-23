@@ -4,7 +4,7 @@ export const home = (req, res) => {
   const uri = req.url;
 
   res.setHeader( "Content-Type", "text/html" );
-  res.end( `Success!` );
+  res.end( `goalbookTEACH Twitterbot Status: Active` );
 }
 
 export const notFound = (req, res) => {
