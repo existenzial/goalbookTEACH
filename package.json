@@ -12,7 +12,7 @@
     "test-watch": "nodemon test/test"
   },
   "engines": {
-    "node": "6.1.0"
+    "node": "^6.5.0"
   },
   "keywords": [],
   "author": "Jazz Lyles <ripley36706@gmail.com> (https://github.com/existenzial)",
