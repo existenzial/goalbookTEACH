@@ -162,6 +162,11 @@
     </category>
 
     <category>
+        <pattern>^ MORE ^ GOALBOOK ^</pattern>
+        <template>Goalbook is a tool of empowerment meant to help children, educators and parents succeed by transforming instruction into a tailored experience built around the individual needs of every child.</template>
+    </category>
+
+    <category>
         <pattern>^ MISSION ^</pattern>
         <template><srai>MISSION</srai></template>
     </category>
@@ -213,7 +218,7 @@
 
     <category>
         <pattern>_ TOOLKIT TRIAL _</pattern>
-        <template>The Toolkit trial period is 30 days. Signup at <a href="https://goalbokapp.com">goalbookapp.com</a> to try it out!</template>
+        <template>The Toolkit trial period is 30 days. Signup at goalbookapp.com to try it out!</template>
     </category>
 
     <category>
@@ -248,7 +253,7 @@
 
     <category>
         <pattern>_ PATHWAYS TRIAL _</pattern>
-        <template>The Pathways trial period is 14 days. Signup at <a href="https://goalbokapp.com">goalbookapp.com</a> to try it out!</template>
+        <template>The Pathways trial period is 14 days. Signup at goalbookapp.com to try it out!</template>
     </category>
 
     <category>
@@ -263,21 +268,26 @@
 
     <category>
         <pattern>^ SIGNUP ^</pattern>
-        <template>Stop by <a href="https://goalbookapp.com">goalbookapp.com</a> to signup and get access today!</template>
+        <template>Stop by goalbookapp.com to signup and get access today!</template>
     </category>
 
     <category>
         <pattern>MEMBERSHIP</pattern>
-        <template>There are a lot of different membership options, so you're guaranteed to find something that's right for you. Stop by <a href="https://goalbookapp.com">goalbookapp.com</a> to check them out!</template>
+        <template>There are a lot of different membership options, so you're guaranteed to find something that's right for you. Stop by goalbookapp.com to check them out!</template>
     </category>
 
     <category>
         <pattern>PRIVACY</pattern>
-        <template>Check out the <a href="https://goalbookapp.com/privacy">Privacy Policy</a> for more details.</template>
+        <template>Visit goalbookapp.com/privacy to check out the Goalbook Privacy Policy for more details.</template>
     </category>
 
     <category>
         <pattern>PRIVACY POLICY</pattern>
+        <template><srai>PRIVACY</srai></template>
+    </category>
+
+    <category>
+        <pattern>^ PRIVACY ^</pattern>
         <template><srai>PRIVACY</srai></template>
     </category>
 
@@ -298,7 +308,12 @@
 
     <category>
         <pattern>TERMS</pattern>
-        <template>The <a href="https://goalbookapp.com/terms">Terms of Use</a> are in place to bind every user to treat others as they would want to be treated. Goalbook cares about their users.</template>
+        <template>Go to goalbookapp.com/terms to see Goalbook's Terms of Use. They are in place to bind every user to treat others as they would want to be treated.</template>
+    </category>
+
+    <category>
+        <pattern>^ TERMS ^</pattern>
+        <template><srai>TERMS</srai></template>
     </category>
 
     <category>
@@ -307,7 +322,7 @@
     </category>
 
     <category>
-        <pattern>WHAT ARE GOALBOOKS TERMS OF USE</pattern>
+        <pattern>^ TERMS OF USE ^</pattern>
         <template><srai>TERMS</srai></template>
     </category>
 
