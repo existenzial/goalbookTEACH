@@ -1,5 +1,3 @@
-`use strict`
-
 const Twit = require('twit');
 const Pandorabot = require('pb-node');
 const { pandoraOptions, twitOptions } = require('./credentials');
@@ -44,13 +42,13 @@ const goalbookDMBotTalk = (err, data, res) => {
       T.post('direct_messages/new', { user_id: messages[0].sender.id, text: res.responses[0] }, (err, data, res) => {
         if (!err) {
           let botReply = data.text;
-          console.log( botReply );
         } else {
           console.error( err );
         }
       })
     }
   });
+  stream.stop();
 }
 
 const pollDMs = () => {
@@ -65,7 +63,6 @@ const greetNewFollow = (event) => {
       T.post('direct_messages/new', { user_id: event.source.id, text: `Hi! Thanks for the follow, ${newUserFollow}!` }, (err, data, res) => {
         if (!err) {
           let botReply = data.text;
-          console.log( botReply );
         } else {
           console.error( err );
         }
@@ -75,4 +72,4 @@ const greetNewFollow = (event) => {
 }
 
 stream.on( 'follow', greetNewFollow );
-//stream.on( 'direct_message', pollDMs );
+stream.on( 'direct_message', pollDMs );
