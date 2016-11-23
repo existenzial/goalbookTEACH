@@ -57,7 +57,6 @@ const pollDMs = () => {
 
 const greetNewFollow = (event) => {
   let newUserFollow = event.source.name;
-  console.log( `New User: ${event.source.screen_name} followed goalbookTEACH!` );
   bot.talk( talkParams, (err, res) => {
     if (!err) {
       T.post('direct_messages/new', { user_id: event.source.id, text: `Hi! Thanks for the follow, ${newUserFollow}!` }, (err, data, res) => {
