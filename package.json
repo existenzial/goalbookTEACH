@@ -11,6 +11,9 @@
     "posttest": "echo Finished running tests!!",
     "test-watch": "nodemon test/test"
   },
+  "engines": {
+    "node": "^6.1.0"
+  }
   "keywords": [],
   "author": "Jazz Lyles <ripley36706@gmail.com> (https://github.com/existenzial)",
   "license": "ISC",
