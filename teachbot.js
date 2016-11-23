@@ -1,4 +1,3 @@
-require("babel-register");
 const Twit = require('twit');
 const Pandorabot = require('pb-node');
 const { pandoraOptions, twitOptions } = require('./credentials');
