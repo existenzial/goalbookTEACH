@@ -2,84 +2,6 @@
 <aiml version="2.0">
 
     <category>
-        <pattern>HELLO ^</pattern>
-        <template>Well, hello there! Welcome to goalbookTEACH! Type 'help' to get started!</template>
-    </category>
-
-    <category>
-        <pattern>HI ^</pattern>
-        <template><srai>HELLO</srai></template>
-    </category>
-
-    <category>
-        <pattern>HI _</pattern>
-        <template><srai>HELLO</srai></template>
-    </category>
-
-    <category>
-        <pattern>MY NAME IS *</pattern>
-        <template>How's it going, <set name="name"><star/></set>?</template>
-    </category>
-
-    <category>
-        <pattern>WHAT IS MY NAME</pattern>
-        <template>How could I forget?! You're <get name="name"/>. You're kind of a big deal...</template>
-    </category>
-
-    <category>
-        <pattern>WHO ARE YOU</pattern>
-        <template>
-            <random>
-                <li>I like to think of myself as your teaching assistant. I hope I can help!</li>
-                <li>Whoooooo are you? Hoo hoo. Hoo hoo.</li>
-            </random>
-        </template>
-
-    </category>
-
-    <category>
-        <pattern>WHAT IS UP _</pattern>
-        <template>Not too much, what's up with you?</template>
-    </category>
-
-    <category>
-        <pattern>WHAT IS UP</pattern>
-        <template><srai>WHATS UP _</srai></template>
-    </category>
-
-    <category>
-        <pattern>HOW IS IT GOING _</pattern>
-        <template>Great! What can I 'help' you with today?</template>
-    </category>
-
-    <category>
-        <pattern>HOW IS IT GOING</pattern>
-        <template><srai>HOWS IT GOING _</srai></template>
-    </category>
-
-    <category>
-        <pattern>HOW OLD ARE YOU _</pattern>
-        <template>
-            <random>
-                <li>I'm <bot name="age"/> if that's what you're asking.</li>
-                <li>Goodness! Too old.</li>
-                <li>No spring chickens here.</li>
-                <li>It's all about how old you feel right?</li>
-            </random>
-        </template>
-    </category>
-
-    <category>
-        <pattern>_ HOW OLD ARE YOU</pattern>
-        <template><srai>HOW OLD ARE YOU _</srai></template>
-    </category>
-
-    <category>
-        <pattern>HOW OLD ARE YOU</pattern>
-        <template><srai>HOW OLD ARE YOU _</srai></template>
-    </category>
-
-    <category>
         <pattern>HELP</pattern>
         <template>To ask a question, simply type 'question' or 'assistance'. If you have a feeling you know where you want to start, list all 'categories' or 'areas' to see available options.</template>
     </category>
@@ -233,7 +155,7 @@
 
     <category>
         <pattern>PATHWAYS</pattern>
-        <template>Goalbook Pathways is the greatest! Here you'll find everything you need from this to that.</template>
+        <template>Goalbook Pathways is the greatest! Here you'll find everything you need to strategize an instructional plan using the UDL framework.</template>
     </category>
 
     <category>

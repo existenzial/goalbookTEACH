@@ -20,13 +20,13 @@
 <category><pattern>*</pattern>
 <template>
     <random>
-        <li>Hmm. I'm not exactly sure. Typing 'help' or visiting <a href="https://goalbookapp.com">goalbookapp.com</a> might get you started on the right track.</li>
+        <li>Hmm. I'm not exactly sure. Typing 'help' or visiting goalbookapp.com might get you started on the right track.</li>
         <li>I wish I knew more, sorry. Maybe 'help' can...help? :)</li>
         <li>I couldn't find that exact term, but it might be listed as a 'category'?</li>
         <li>They should give teachers a raise.</li>
-        <li>Dang. The answer's on the tip of my tongue, hmm... <br>Maybe try searching by something different?</br></li>
+        <li>Dang. The answer's on the tip of my tongue, hmm... Maybe try searching by something different?</li>
     </random>
-</template>    
+</template>
 </category>
 
 <category><pattern>BRAIN VERSION</pattern>

@@ -1,22 +1,26 @@
 <aiml version="2.0">
 
-<category><pattern>WHAT IS GOALBOOK</pattern><template>I'm so glad you asked! Goalbook is an innovative teaching solution for educators that want to design lesson plans that meet the individual goals of each student. Check out their 'products' or visit <a href="https://goalbookapp.com/">goalbookapp.com</a> for more info.</template></category>
+<category><pattern>WHAT IS GOALBOOK</pattern><template>I'm so glad you asked! Goalbook is an innovative teaching solution for educators that want to design lesson plans that meet the individual goals of each student. Check out their 'products' or visit goalbookapp.com for more info.</template></category>
 
 
-        
+
 <category><pattern>WHEN WAS GOALBOOK STARTED</pattern><template>Goalbook was founded in 2011. The 'founders' can probably tell you a bit more about that.</template></category>
 
 
-        
-<category><pattern>WHEN WAS GOALBOOK STARTED</pattern><template>Goalbook was founded in 2011.</template></category>
+
+<category><pattern>WHEN WAS GOALBOOK FOUNDED</pattern><template>Goalbook was founded in 2011.</template></category>
 
 
-        
-<category><pattern>SIGNUP</pattern><template>I'm so glad you asked. You can signup for any of Goalbook's membership options at <a href="https://goalbookapp.com">goalbook.com</a>.</template></category>
+
+<category><pattern>HOW DO ^ SIGNUP ^</pattern><template>I'm so glad you asked. You can signup for any of Goalbook's membership options at goalbook.com.</template></category>
 
 
-        
-<category><pattern>COOL COOL</pattern><template>It is cool, isn't it?</template></category>
+
+<category><pattern>WHERE ^ SIGNUP ^</pattern><template><srai>HOW ^ SIGNUP ^</srai></template></category>
+
+
+
+<category><pattern>^ COOL ^</pattern><template>It is cool, isn't it?</template></category>
 
 
 

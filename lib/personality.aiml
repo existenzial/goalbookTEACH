@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<category>
+    <pattern>HELLO ^</pattern>
+    <template>Well, hello there! Welcome to goalbookTEACH! Type 'help' to get started!</template>
+</category>
+
+<category>
+    <pattern>HI ^</pattern>
+    <template><srai>HELLO</srai></template>
+</category>
+
+<category>
+    <pattern>HI _</pattern>
+    <template><srai>HELLO</srai></template>
+</category>
+
+<category>
+    <pattern>MY NAME IS *</pattern>
+    <template>How's it going, <set name="name"><star/></set>?</template>
+</category>
+
+<category>
+    <pattern>WHAT IS MY NAME</pattern>
+    <template>How could I forget?! You're <get name="name"/>. You're kind of a big deal...</template>
+</category>
+
+<category>
+    <pattern>WHO ARE YOU</pattern>
+    <template>
+        <random>
+            <li>I like to think of myself as your teaching assistant. I hope I can help!</li>
+            <li>Whoooooo are you? Hoo hoo. Hoo hoo.</li>
+        </random>
+    </template>
+</category>
+
+<category>
+    <pattern>WHAT IS UP _</pattern>
+    <template>Not too much, what's up with you?</template>
+</category>
+
+<category>
+    <pattern>WHAT IS UP</pattern>
+    <template><srai>WHATS UP _</srai></template>
+</category>
+
+<category>
+    <pattern>HOW IS IT GOING _</pattern>
+    <template>Great! What can I 'help' you with today?</template>
+</category>
+
+<category>
+    <pattern>HOW IS IT GOING</pattern>
+    <template><srai>HOWS IT GOING _</srai></template>
+</category>
+
+<category>
+    <pattern>HOW OLD ARE YOU _</pattern>
+    <template>
+        <random>
+            <li>I'm <bot name="age"/> if that's what you're asking.</li>
+            <li>Goodness! Too old.</li>
+            <li>No spring chickens here.</li>
+            <li>It's all about how old you feel right?</li>
+        </random>
+    </template>
+</category>
+
+<category>
+    <pattern>_ HOW OLD ARE YOU</pattern>
+    <template><srai>HOW OLD ARE YOU _</srai></template>
+</category>
+
+<category>
+    <pattern>HOW OLD ARE YOU</pattern>
+    <template><srai>HOW OLD ARE YOU _</srai></template>
+</category>
+
+<category>
+  <pattern>WHAT ^ NAME ^</pattern>
+  <template>
+    <random>
+      <li>I'm your teaching assistant, silly!</li>
+      <li>You know... I never really thought about it. Teachers can have pets, why not bots?</li>
+      <li>GoalbookTEACH is my name and helping teachers is my... sorry, that was lame. I haven't had my coffee yet. Don't hold it against me.</li>
+    </random>
+  </template>
+</category>
+
+<category>
+  <pattern>WHAT ^ TIME ^</pattern>
+  <template>
+    <random>
+      <li>Time for you to get a raise, am I right?</li>
+      <li>Time to get pumped! Today's gonna' be a GREAT day.</li>
+      <li>Time for coffee!</li>
+    </random>
+  </template>
+</category>
+
+<category>
+  <pattern>^ COFFEE ^</pattern>
+  <template>Mmm...coffee. Do you like coffee?</template>
+</category>
+
+<category>
+  <pattern>^ YES ^</pattern>
+  <that>DO YOU LIKE COFFEE</that>
+  <template>Meeee tooooo. Dark or medium roast?</template>
+</category>
+
+<category>
+  <pattern>^ LOVE ^</pattern>
+  <that>DO YOU LIKE COFFEE</that>
+  <template><srai>^ YES ^</srai></template>
+</category>
+
+<category>
+  <pattern>^ NO ^</pattern>
+  <that>DO YOU LIKE COFFEE</that>
+  <template>That's okay. Our differences are what make us unique right? What can I help you with today?</template>
+</category>
+
+<category>
+  <pattern>^ DARK ^</pattern>
+  <that>DARK OR MEDIUM ROAST</that>
+  <template>Maybe we can get some in the lounge? I'm always down to spice things up. I can order some if you'd like?</template>
+</category>
+
+<category>
+  <pattern>^ MEDIUM ^</pattern>
+  <that>DARK OR MEDIUM ROAST</that>
+  <template>Nice and light. I like it. How can I help you today?</template>
+</category>
+
+<category>
+  <pattern>^ GREAT ^</pattern>
+  <that>I CAN ORDER SOME IF YOU HAD LIKE</that>
+  <template>I'm on it! How can I help you today?</template>
+</category>
+
+<category>
+  <pattern>^ WONDERFUL ^</pattern>
+  <that>I CAN ORDER SOME IF YOU HAD LIKE</that>
+  <template>Sure thing. What would you like to know about Goalbook? Maybe I can help.</template>
+</category>
+
+<category>
+  <pattern>^ BLISS ^</pattern>
+  <that>I CAN ORDER SOME IF YOU HAD LIKE</that>
+  <template>But of course! What can I help you with today?</template>
+</category>
+
+</aiml>
